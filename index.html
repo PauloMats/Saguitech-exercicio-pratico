@@ -3,9 +3,50 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sagui Tech</title>
+    <title>NFS-e Generator</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            max-width: 800px;
+            margin: 40px auto;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+    </style>
 </head>
 <body>
-    
+    <div class="container">
+        <h1>NFS-e Generator</h1>
+        <form id="nfs-e-form">
+            <label for="sale-value">Valor da Venda:</label>
+            <input type="number" id="sale-value" required>
+            <br><br>
+            <label for="items">Itens que estão sendo vendidos:</label>
+            <textarea id="items" required></textarea><br><br>
+            <label for="irpf">Porcentagem do Imposto (IRPF):</label>
+            <input type="number" id="irpf" required>
+            <br><br>
+            <label for="pis">Porcentagem do Imposto (PIS):</label>
+            <input type="number" id="pis" required>
+            <br><br>
+            <label for="cofins">Porcentagem do Imposto (COFINS):</label>
+            <input type="number" id="cofins" required>
+            <br><br>
+            <label for="inss">Porcentagem do Imposto (INSS):</label>
+            <input type="number" id="inss" required>
+            <br><br>
+            <label for="issqn">Porcentagem do Imposto (ISSQN):</label>
+            <input type="number" id="issqn" required>
+            <br><br>
+            <button type="submit">Gerar NFS-e</button>
+        </form>
+        <div id="nfs-e-output"></div>
+    </div>
+
+    <script src="script.js"></script>
 </body>
 </html>
